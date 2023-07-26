@@ -14,3 +14,10 @@ console.log(stringify);
 const strobj=JSON.parse(stringify);
 
 console.log(strobj);
+
+
+// 2. fetch 
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(response=>response.json())
+.then(data=>{console.log(data)})
